@@ -42,6 +42,7 @@ app.listen(PORT, () => {
 });
 
 //middleware
+app.use(cors())
 app.use(express.json());
 
 // middleware check login
