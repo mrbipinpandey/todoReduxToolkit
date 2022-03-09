@@ -25,9 +25,9 @@ mongoose.connection.on("error", (err) => {
   console.log("error", err);
 });
 
-app.get("/", (req, res) => {
-  res.json({ message: "hello world!" });
-});
+// app.get("/", (req, res) => {
+//   res.json({ message: "hello world!" });
+// });
 
 if(process.env.NODE_ENV == 'production'){
   const path = require('path')
